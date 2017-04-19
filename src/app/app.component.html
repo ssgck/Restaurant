@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<hr>
+<input type="text" [(ngModel)]='username'>
+<p>{{username}}</p>
+<button class="btn btn-primary" (click)=resetUsername() [disabled]="!(username.length>0)">Reset</button>
+
+<button class="btn btn-primary" >DisplayDetails</button>
+<p id="p">Hello</p>
+
